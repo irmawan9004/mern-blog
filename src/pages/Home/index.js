@@ -1,9 +1,17 @@
+import { BlogItem, Button } from "components";
 import React from "react";
+import "./index.scss";
 
 const Home = () => {
   return (
-    <div>
-      <p>Home Page</p>
+    <div className="home-page-wrapper">
+      <div className="create-wrapper">
+        <Button title="Create Blog" />
+      </div>
+      <BlogItem />
+      <BlogItem />
+      <BlogItem />
+      <BlogItem />
     </div>
   );
 };
